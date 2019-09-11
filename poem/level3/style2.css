@@ -1,0 +1,54 @@
+body{
+  min-width: 5000px;
+}
+
+.title{
+
+}
+
+.poem{
+  /* position: relative;
+  /* margin: 0 20px; */
+  display: flex;
+  flex-flow: row nowrap; */
+}
+
+.verse1{
+  /* border: 1px solid; */
+  padding: 20px;
+  margin-right: 10px;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+}
+
+.verse1 > .line4{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.verse2{
+  border: 1px solid;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.verse3{
+  border: 1px solid;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.verse4{
+  border: 1px solid;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  margin-right: 10px;
+}
