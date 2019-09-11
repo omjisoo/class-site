@@ -1,0 +1,31 @@
+p {
+  color: midnightblue;
+  font-size: 20px;
+  font-family: fantasy;
+  background: mistyrose;
+  border: 5px dotted mintcream;
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.blueberry {
+  color: royalblue;
+  font-size: 50px;
+
+}
+
+.almond{
+  background: blanchedalmond;
+  height: 50px;
+  width: 50px;
+  margin: 0 0 20px 20px
+}
+
+#strawberry {
+  background: plum;
+}
+
+#lavender {
+  background: lavender;
+}
