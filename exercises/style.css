@@ -3,12 +3,22 @@ body{
   font-size: 400px;
   display: flex;
 }
+
+.back{
+  position: fixed;
+  font-size: 70px;
+  right: 20px;
+  bottom: 0;
+}
+
 .name{
     /* border: 1px solid; */
-  position: fixed;
+  position: absolute;
+  padding: 50px;
+  left: -200px;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  margin-right: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +31,8 @@ a{
 }
 
 a:hover {
-  transition: 0.2s ease;
   color: blue;
+  transition: 0.2s ease;
 }
 
 #menu{
@@ -32,13 +42,15 @@ a:hover {
 }
 
 #menu-item{
+  /* position: absolute;
+  bottom: 50px; */
   display: none;
   color: red;
-  position: absolute;
   font-size: 20px;
   font-weight: 500;
   max-width: 100px;
-  bottom: 50px;
+  margin-right: 20px;
+
 }
 
 #menu:hover #menu-item{
