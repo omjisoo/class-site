@@ -1,0 +1,45 @@
+body{
+  font-family: 'Hepta Slab', serif;
+  font-size: 400px;
+  display: flex;
+}
+.name{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  transition: 0.2s ease;
+  color: blue;
+}
+
+#menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-item{
+  display: none;
+  color: red;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 500;
+  bottom: 50px;
+}
+
+#menu:hover #menu-item{
+  display: block;
+  transition: 0.5s ease;
+}

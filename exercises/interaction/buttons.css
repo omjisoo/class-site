@@ -1,0 +1,51 @@
+a{
+  text-decoration: none;
+  color: purple;
+}
+
+img{
+  max-width: 100%;
+}
+
+.button{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: pink;
+    z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  transition: background 1s ease,
+              height 1s ease;
+}
+
+.button:hover{
+  background: turquoise;
+  color: white;
+  height: 100%;
+}
+
+.prev{
+  left: 0;
+}
+
+.next{
+  right: 0;
+}
+
+.image{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+}
+
+.hover-img:hover .image {
+  display: block;
+}
