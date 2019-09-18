@@ -41,7 +41,22 @@ a:hover {
   bottom: 50px;
 }
 
+#menu-face{
+  display: none;
+  position: absolute;
+  font-size: 100px;
+  font-weight: 500;
+  max-width: 200px;
+  margin-top: 40px;
+  transform: rotate(90deg);
+}
+
 #menu:hover #menu-item{
+  display: block;
+  transition: 0.5s ease;
+}
+
+#menu:hover #menu-face{
   display: block;
   transition: 0.5s ease;
 }
