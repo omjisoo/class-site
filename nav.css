@@ -1,0 +1,55 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container{
+  font-family: 'BioRhyme', serif;
+  position: fixed;
+  font-size: 30px;
+  color: blue;
+  right: 20px;
+  bottom: 0;
+  line-height: 1;
+  display: flex;
+  flex-flow: column;
+  width: 150px;
+  z-index: 9999
+}
+
+.nav:hover{
+  background: lavenderblush;
+  color: red;
+}
+
+.nav-alt-container{
+  font-family: 'BioRhyme', serif;
+  position: fixed;
+  font-size: 30px;
+  left: 10px;
+  bottom: 0;
+  line-height: 1;
+  display: flex;
+}
+
+.nav-alt{
+  width: 100px;
+  text-align: center;
+}
+
+#white{
+  color: white;
+}
+
+#white:hover{
+  color: red;
+}
+
+#black{
+  color: black;
+}
+
+.nav-alt:hover{
+  background: lavenderblush;
+  color: red;
+}

@@ -1,0 +1,168 @@
+body{
+  margin: 0;
+}
+
+.container-main{
+  display: flex;
+  flex-flow: column;
+  border: 1px solid red;
+  padding: 50px;
+  font-family: 'Jura', serif;
+  line-height: 1.25;
+  /* background: mintcream; */
+  /* color: midnightblue; */
+}
+
+.container-header{
+  border: 2px dotted red;
+  background: white;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.author{
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: flex-end;
+}
+
+.container-line{
+  margin-bottom: 50px;
+  /* display: flex;
+  flex-flow: column;
+  align-items: center; */
+  /* width: 50%; */
+}
+
+.right{
+  text-justify: right;
+}
+
+.line{
+  /* border: 2px solid blue; */
+  padding: 3px 10px;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+  opacity: 0;
+  transition: letter-spacing 1s ease;
+              color 1s ease;
+}
+
+.border{
+  border: 2px solid blue;
+  border-radius: 50px;
+}
+
+.microchip:hover{
+  background: black;
+  color: white;
+  border-top: 2px dashed white;
+  border-bottom: 2px dashed white;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+.beep:hover{
+  background: red;
+  color: yellow;
+  font-style: oblique;
+}
+
+.useless:hover{
+  letter-spacing: 30px;
+  transition: 1s ease;
+}
+
+.tax:hover{
+  background: green;
+  color: white;
+  border: 5px double darkgreen;
+  border-radius: 0;
+}
+
+.fits:hover{
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+.fights:hover{
+  font-weight: bolder;
+  font-size: 200px;
+}
+
+.bug:hover{
+  font-weight: bolder;
+  font-size: 500px;
+  margin-top: 50px;
+  background: red;
+  border: none;
+}
+
+.erased:hover{
+  color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.slideInLeft{
+  animation: slideInLeft 1.5s forwards;
+}
+
+@keyframes zoomIn{
+  from{
+    transform: scale(0);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 100;
+  }
+}
+
+.zoomIn{
+  animation: zoomIn 1.5s forwards;
+}

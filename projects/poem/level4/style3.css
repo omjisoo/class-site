@@ -1,0 +1,37 @@
+body{
+  margin: 0;
+}
+
+.container-main{
+  display: flex;
+  flex-flow: column wrap;
+  border: 3px solid red;
+  padding: 50px;
+  font-family: 'Zilla Slab', serif;
+  line-height: 1.25;
+  background: mintcream;
+  color: midnightblue;
+}
+
+.container-header{
+  /* border: 1px solid blue; */
+  margin-bottom: 500px;
+}
+
+.title{
+  font-weight: bolder;
+  font-size: 100px;
+  text-transform: capitalize;
+
+}
+
+.author{
+  font-size: 80px;
+  color: lightblue;
+}
+
+.line{
+  /* border: 1px solid blue; */
+  line-height: 1.25;
+  font-size: 80px;
+}

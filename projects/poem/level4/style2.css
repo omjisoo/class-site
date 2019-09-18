@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container-main{
+  display: flex;
+  flex-flow: column wrap;
+  background: yellow;
+}
+
+.container-header{
+  /* border: 1px solid red; */
+  padding: 50px;
+  color: green;
+  position: fixed;
+  width: 94%;
+  height: 90%;
+}
+
+.title{
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 200px;
+}
+
+.author{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 60px;
+  font-size: 20px;
+}
+
+.container-verse{
+  margin-top: 1000px;
+  z-index: 1;
+  padding: 100px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  border: 2px solid blue;
+  background: white;
+  padding: 20px;
+  padding-left: 40px;
+  position: sticky;
+  margin-bottom: 100px;
+  width: 500px;
+  height: 200px;
+  font-size: 20px;
+  text-align: justify;
+}

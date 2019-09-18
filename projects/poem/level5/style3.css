@@ -1,0 +1,291 @@
+body{
+  margin: 0;
+}
+
+.container-main{
+  display: flex;
+  font-family: 'Manjari', sans-serif;
+  color: midnightblue;
+  line-height: 1.25;
+  height: 99vh;
+}
+
+.container{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 20px;
+  min-width: 450px;
+  font-size: 20px;
+  z-index: -3;
+}
+
+.header{
+  min-width: 200px;
+}
+
+.author{
+  font-size: 16px;
+}
+
+.container-graphic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic{
+  background: gray;
+  border-radius: 10px;
+  width: 420px;
+  height: 600px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+
+.babyhappy{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.babysad{
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.face{
+  background: pink;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  background: black;
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#color1{
+  background: pink;
+}
+
+#color2{
+  background: red;
+}
+
+#color3{
+  background: forestgreen;
+}
+
+#color4{
+  background: orange;
+}
+
+#color5{
+  background: deepskyblue;
+}
+
+#color6{
+  background: yellow;
+}
+
+#money{
+  background: forestgreen;
+  padding: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+#gray{
+  background: gray;
+  height: 100px;
+}
+
+.dollar{
+  position: absolute;
+  z-index: -1;
+  font-size: 100px;
+}
+
+.bug{
+  border: 10px dashed forestgreen;
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+.container-learning{
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  transform: rotate(5deg)
+}
+
+#learning{
+  margin-left: 100px;
+  font-size: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background: orange;
+  transition: 1.5s ease;
+}
+
+#learning:hover{
+  transform: rotate(1turn);
+}
+
+.line{
+  margin-left: 20px;
+}
+
+.fight{
+  font-size: 70px;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+#fight{
+  font-style: oblique;
+  color: yellow;
+}
+
+.reboot{
+  background: black;
+}
+.container-erased{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 450px;
+  background: white;
+  transition: 3s ease;
+}
+
+.container-erased:hover{
+  transform: scaleX(15);
+  transform-origin: right;
+  z-index: 0;
+  /* transition: 3s ease; */
+}
+
+.erased{
+  font-size: 30px;
+}
+
+/* Animation */
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -200%, 0);
+    transform: translate3d(0, -200%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -1000%, 0);
+    transform: translate3d(0, -1000%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
