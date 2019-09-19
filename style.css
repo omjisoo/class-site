@@ -1,62 +1,91 @@
-body{
-  font-family: 'Hepta Slab', serif;
-  font-size: 400px;
-  display: flex;
-}
-.name{
-    /* border: 1px solid; */
+.main-nav{
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 180px;
+  font-weight: 400;
+  transition: margin 1s ease;
 }
 
-a{
-  text-decoration: none;
-  color: black;
-  /* transition: 3s ease; */
+.j{
+  background: none;
 }
 
-a:hover {
-  transition: 0.2s ease;
-  color: blue;
+.j:hover{
+  color: yellow;
 }
 
-#menu{
+.circle-flex{
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-
-#menu-item{
-  display: none;
-  color: red;
-  position: absolute;
-  font-size: 20px;
-  font-weight: 500;
-  max-width: 200px;
-  bottom: 50px;
-}
-
-#menu-face{
-  display: none;
-  position: absolute;
-  font-size: 100px;
-  font-weight: 500;
-  max-width: 200px;
   margin-top: 40px;
-  transform: rotate(90deg);
 }
 
-#menu:hover #menu-item{
-  display: block;
-  transition: 0.5s ease;
+.circle{
+  width: 80px;
+  height: 80px;
+  border: 10px solid pink;
+  border-radius: 50%;
+  margin: 0 10px;
+  /* transition: transform 1s ease; */
 }
 
-#menu:hover #menu-face{
+a.circle:hover{
+  background: yellow;
+}
+
+.name{
+  display: none;
+  position: absolute;
+  top: -40px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.circle-flex:hover .name{
   display: block;
-  transition: 0.5s ease;
+}
+
+.selected{
+  display: block;
+  transform: translateY(80px);
+}
+
+.side-nav{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 25%;
+}
+
+.sub{
+  position: relative;
+  right: 20px;
+}
+
+.highlight{
+  background: yellow;
+  color: deepskyblue;
+  border-radius: 20px;
+}
+
+.side-nav a{
+  font-size: 30px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  padding: 1px 10px;
+  transition: color 0.5s ease;
+}
+
+.side-nav a:hover{
+  background: yellow;
+  color: deepskyblue;
+  border-radius: 20px;
 }

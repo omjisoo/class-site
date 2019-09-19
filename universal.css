@@ -1,0 +1,42 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: pink;
+}
+
+a{
+  text-decoration: none;
+  color: pink;
+}
+
+.flex{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  background: forestgreen;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-20px);}
+}
+
+.bounce {
+  animation: bounce 1s alternate infinite ease;
+  animation-play-state: running;
+}
+
+.bounce:hover{
+  animation-play-state: paused;
+  border-radius: 50%;
+}
