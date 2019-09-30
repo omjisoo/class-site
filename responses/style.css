@@ -1,0 +1,60 @@
+.response-flex{
+  position: absolute;
+  top: 40px;
+  left:40%;
+  /* width: 100%; */
+  /* height: 100%; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.response-box{
+  background: forestgreen;
+  border: 2px dotted yellow;
+  padding: 15px;
+  width: 400px;
+  margin-left:40px;
+  margin-right: 40px;
+  margin-bottom:40px
+}
+
+.comment{
+  color: pink;
+  padding: 20px;
+  /* width: 400px; */
+  /* margin-right: 20px; */
+}
+
+.quote{
+  background: forestgreen;
+  color: yellow;
+  border: 2px solid yellow;
+  padding: 15px;
+  width: 400px;
+  margin-right: 40px;
+  margin-top: 20px;
+  font-style:italic;
+}
+
+.side-nav a{
+  font-style: italic;
+}
+
+.side-nav .back{
+  border: 1px solid pink;
+  border-radius: 20px;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.back:hover{
+  border: none;
+}
+
+.highlight-text{
+  background: yellow;
+  color: deepskyblue;
+  padding: 0 3px;
+}

@@ -1,3 +1,4 @@
+/* main-nav */
 .main-nav{
   position: fixed;
   bottom: 0;
@@ -9,11 +10,7 @@
   transition: margin 1s ease;
 }
 
-.j{
-  background: none;
-}
-
-.j:hover{
+#j:hover{
   color: yellow;
 }
 
@@ -31,7 +28,6 @@
   border: 10px solid pink;
   border-radius: 50%;
   margin: 0 10px;
-  /* transition: transform 1s ease; */
 }
 
 a.circle:hover{
@@ -51,33 +47,23 @@ a.circle:hover{
   display: block;
 }
 
-.selected{
+.main-selected{
   display: block;
   transform: translateY(80px);
 }
 
+/* side-nav */
 .side-nav{
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   display: flex;
-  flex-flow: column wrap;
-  max-width: 25%;
-}
-
-.sub{
-  position: relative;
-  right: 20px;
-}
-
-.highlight{
-  background: yellow;
-  color: deepskyblue;
-  border-radius: 20px;
+  flex-flow: column;
+  align-items: flex-start;
 }
 
 .side-nav a{
-  font-size: 30px;
+  font-size: 26px;
   margin-right: 50px;
   margin-bottom: 5px;
   padding: 1px 10px;
@@ -85,6 +71,16 @@ a.circle:hover{
 }
 
 .side-nav a:hover{
+  background: yellow;
+  color: dodgerblue;
+  border-radius: 20px;
+}
+
+.sub{
+  position: relative;
+}
+
+.side-selected{
   background: yellow;
   color: deepskyblue;
   border-radius: 20px;
