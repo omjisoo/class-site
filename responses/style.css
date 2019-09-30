@@ -26,6 +26,11 @@
   /* margin-right: 20px; */
 }
 
+.more{
+  border: 2px dotted yellow;
+  background: forestgreen;
+}
+
 .quote{
   background: forestgreen;
   color: yellow;
