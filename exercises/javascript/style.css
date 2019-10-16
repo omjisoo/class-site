@@ -1,0 +1,35 @@
+.move {
+  transform: translateX(300px)
+}
+
+.btn{
+  cursor: crosshair;
+  position: fixed;
+  right: 0;
+}
+
+#box{
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  background: rgb(255, 0, 214);
+  transition: transform .5s ease;
+}
+
+.marquee {
+  width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  /* border:1px solid #ccc; */
+}
+
+.highlight:hover{
+  color: red;
+}
+
+.bluebox{
+  border: 1px solid blue;
+  background-color: #99CCFF;
+  padding: 5px;
+}

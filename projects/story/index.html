@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Migrant Thoughts, Migrant Objects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|IBM+Plex+Serif:400i|Changa&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav">
+      <p>Migrant Thoughts, Migrant Objects</p>
+      <a href="#start" onClick="window.location.reload(); window.scrollTo(0,0);">back to beginning</a>
+    </div>
+
+    <div class="zone-container">
+      <p>Scroll to the right or hover on the right side to continue the story ⟶ </p>
+      <div class="zone"></div>
+    </div>
+
+    <div class="obj-container" id=objects>
+        <a href="javascript:show('bear');"><img src="img/bear.png"></a>
+        <div class="story" id="bear">
+          <p>When Mom and I were visiting Japan, one store was selling these teddy bears dressed as characters from an anime I was into. I pretended to not know about their identity and casually asked Mom to buy it as a souvenir. As a closeted fan, I was exhilarated and nervous to own an anime merchandise for the first time, even if it was a very covert one. Mom had no idea of course; she would keep pulling the bear's sleeves back when they were intentionally oversized, saying “he looks like a dimwit like that,” which was a surprisingly spot-on analysis of the character. I tagged the bear on my bag for a short while, until my interest in anime faded off. <br><br> (Summer 2017, Japan)</p>
+        </div>
+        <a href="javascript:show('oblongpin')"><img src="img/oblongpin.png"></a>
+        <div class="story" id="oblongpin" style="margin-left:400px;">
+          <p>If I remember correctly, this pin represents honors of some kind. I received it near the end of high school. For the prestige it is supposed to symbolize, it is the drabbest looking pin I have ever seen. <br><br> (c.2016, USA)</p>
+        </div>
+        <a href="javascript:show('bodyspray')"><img src="img/bodyspray.png"></a>
+        <div class="story" id="bodyspray" style="margin-left:800px;">
+          <p>It was a birthday present from a friend when I was in high school. It smells great, but I never saw the need to spray myself and there's too much left to throw away. I find it ironic that it still has the NEW! sticker on it.<br><br>(c.2012-2016, USA)</p>
+        </div>
+      <a href="javascript:show('bowring');"><img src="img/bowring.png"></a>
+        <div class="story" id="bowring" style="margin-left:1200px;">
+          <p>I was very fond of this plastic ring, so much that when I lost it I bought the exact same one from the same store. There is still something charming about it, but I find it very cumbersome to take off every time I wash my hands, or when I'm typing. <br><br>(c.2008-2012, India)</p>
+        </div>
+      <a href="javascript:show('clock');"><img src="img/clock.png"></a>
+        <div class="story" id="clock" style="margin-left:1600px;">
+          <p>I rarely used it as an alarm because it’s so loud and a hassle to turn off. It came in handy as an art prop, though; once, I used it as a subject for drawing class in AFO, and for a photoshoot in sophomore year. I’m a little bit attached to it because I bought it with my mom. And there’s something about analog alarm clocks that are pleasant to look at. But who needs an alarm clock when my cell phone does everything for me?<br><br>(c.2016, Korea?)</p>
+        </div>
+      <a href="javascript:show('fishring');"><img src="img/fishring.png"></a>
+        <div class="story" id="fishring" style="margin-left:2000px;">
+          <p>Before going on to college, I had a reunion with my friend from elementary school in Korea). It was a rare occasion because I had lost contact with all of my elementary school friends from moving around. I remember it to be a little bit awkward, but she was very nice to me. We each got the same ring as a token of friendship. She was an art student as well, but the circumstances were very different for her because entrance exams for art schools in Korea are intense and obsessed with technical precision.  We haven’t met ever since.<br><br>(c.2016, Korea)</p>
+        </div>
+      <a href="javascript:show('goa')"><img src="img/goa.png"></a>
+      <div class="story" id="goa" style="margin-left:2400px;">
+        <p>Seeing this shell reminds me of the peaceful, quiet moments spent at Goa. ()</p>
+      </div>
+      <a href="javascript:show('hairspray');"><img src="img/hairspray.png"></a>
+        <div class="story" id="hairspray" style="margin-left:2800px;">
+          <p>When I was in high school, I always tried out for plays and musicals, hoping I would get a speaking role. But my place was always in the chorus or backstage. I don’t like the way the hairspray stiffens my hair, and I’m afraid I might forget to wash it off.<br><br>(c.2012-2016, USA)</p>
+        </div>
+      <a href="javascript:show('pinknecklace');"><img src="img/pinknecklace.png"></a>
+        <!-- <div class="story" id="pinknecklace" style="margin-left:3200px;">
+          <p></p>
+        </div> -->
+      <a href="javascript:show('scour');"><img src="img/scouringpads.png"></a>
+          <div class="story" id="scour" style="margin-left:3600px;">
+            <p>For a sophomore project, I composed an original music piece inspired by scouring pads and made a video in which I posed as The Scouring Band and “play” scouring pads as instruments. There are so many of these industrial-sized scouring pads left over that I could use them for a lifetime.<br><br><November 2017, USA)</p>
+          </div>
+      <a href="javascript:show('rosary');"><img src="img/rosary.png"></a>
+        <div class="story" id="rosary" style="margin-left:4000px;">
+          <p>While I was living in India), I pretended to be catholic and got baptized so that I could attend a catholic school in the US with reduced tuition. I didn’t plan this; I did what my mom told me to. I even cried and begged about not getting baptized because it hurt my conscience to pronounce a fake belief. <br><br> This was a gift by someone congratulating me for becoming an official member of the Catholic Church. Other rosaries I received that day have been released from my possession long time ago; I had kept this one simply because it was the prettiest. <br><br>(c.2011-2012, India)</p>
+        </div>
+      <a href="javascript:show('selfie');"><img src="img/selfiesticks.png"></a>
+        <div class="story" id="selfie" style="margin-left:4400px;">
+          <p>The selfie sticks were on clearance sale at a bookstore. I didn’t want them, but Mom thought it would be a good idea to give some to friends in America. To be honest, they’re too crappy quality to be gifts. Nobody uses selfie sticks here anyway. And I can’t connect it to my phone because it doesn’t have an earphone plug, which I blame on the sneaky design of the phone.<br><br>(Summer 2017, Korea)</p>
+        </div>
+      <a href="javascript:show('sharkman');"><img src="img/sharkman.png"></a>
+        <div class="story" id="sharkman" style="margin-left:4800px;">
+          <p>I had an overnight layover in Denmark coming back from a month-long study abroad in Italy. Even though it was only evening, all the stores were closed and I had no chance to visit the official Lego Store. I bought this keyring at the duty-free shop of the airport instead. I hung it on the back of my backpack, until one day I noticed that both its arms were gone. I feel guilty that I didn’t take good care of shark man.
+          <br><br>(Summer 2018, Denmark)
+          </p>
+        </div>
+      <a href="javascript:show('silverhp');"><img src="img/silverhp.png"></a>
+        <div class="story" id="silverhp" style="margin-left:5200px;">
+          <p>It came free with the purchase of a new laptop at the beginning of college, the time of renewal and hope. I used to wear the headphones during exercise, so I hope it doesn’t smell like sweat. Now I have wireless earphones that are more portable and convenient.<br><br>(c.2016, USA)</p>
+        </div>
+      <a href="javascript:show('socks');"><img src="img/socks.png"></a>
+        <div class="story" id="socks" style="margin-left:5600px;">
+          <p>I don’t wear these anymore because I am not too fond of the way they accentuate my calves. And these days I barely wear shorts or skirts to go with them.<br><br>(c.2012, Korea)</p>
+        </div>
+      <a href="javascript:show('tigerheart');"><img src="img/tigernecklace.png"></a>
+        <div class="story" id="tigerheart" style="margin-left:6000px;">
+          <p>I can't believe I have had this since middle school, carried it to three countries, never wore it, and still kept it around, thinking I would wear it someday. <br><br> (c.2008-2012, India)</p>
+        </div>
+      <a href="javascript:show('webcam');"><img src="img/webcam.png"></a>
+        <div class="story" id="webcam" style="margin-left:6400px;">
+          <p>The laptop I had in middle school had an awful design where the webcam was integrated into the right bottom corner of the screen. Someone must have thought, "Let's try something new!" without realizing how their face would look from below. <br><br>(c.2008-2012, India)</p>
+        </div>
+      <a href="javascript:show('hat')"><img src="img/strawhat.png"></a>
+        <!-- <div class="story" id="hat" style="margin-left:6800px;">
+          <p>the story of straw hat</p>
+        </div> -->
+      <a href="javascript:show('scooter');"><img src="img/scooter.png"></a>
+        <div class="story" id="scooter" style="margin-left:7200px;">
+          <p>This was a cheaper, more portable alternative to a bike. I used it quite well to commute to classes, as it saves upto 10 minutes compared to walking. I would hang my grocery bags on the handles coming back from Kroger. Now I don’t ride it because I fear my thighs will become mismatched if I forget to switch my legs. As of late I have been seeing more people riding kick scooters around campus, and I feel a sort of kinship to them, even though I no longer ride the scooter. <br><br>(February 2017, USA)</p>
+        </div>
+    </div>
+
+    <div class="txt-container">
+      <div class="div" id="start"></div>
+      <div class="div intro" style="width: 120vw;">
+        <div class="sticky txt">I am a migrant&nbsp;<sup><a href=# id=migrant>?
+            <img src=img/migrant.png class="hidden">
+          </a></sup>, as opposed to an immigrant&nbsp;<sup><a href=# id=immigrant>?
+            <img src=img/immigrant.png class="hidden">
+          </a></sup>;
+        </div>
+      </div>
+      <div class="div" style="width:75vw">
+        <div class="txt">
+          it is uncertain if I will settle down in America.
+        </div>
+      </div>
+      <div class="div">
+        <div class="sticky txt" style="left:25%">
+          Due to my mobility, unintentionally, my objects have become migrants too.
+        </div>
+      </div>
+      <div class="div" style="width:50vw;">
+        <div class="sticky txt">They come from all over the world.</div>
+      </div>
+      <div class="div" style="width:120vw">
+        <div class="sticky txt" style="left:25%;padding-right:50%;">They've grown on me, but I cannot hold onto them forever.
+        </div>
+      </div>
+      <div class="div" style="width:120vw">
+        <div class="sticky txt" style="left:25%; padding-right:25%;">In this space, I preserve their image and the memories contained within each.</div>
+      </div>
+      <div class="div" style="width:120vw;">
+        <div class="sticky txt" style="left:25%; padding-right:25%;">This way, I am ready to let go of these objects which have been with me for a long time.</div>
+      </div>
+      <div class="div">
+        <div class="sticky txt" style="left:25%;margin-top:220px">When these objects leave my hands,<br>will they have a chance to begin anew?</div>
+      </div>
+      <div class="div">
+        <div class="sticky txt" style="left:25%;margin-top:-200px">Or will they meet their long-dreaded downfall (the dump)?</div>
+      </div>
+      <div class="div" style="margin-top:230px">
+        <div class="sticky txt">For now, I have power over their fate.<br>It bestows a weird sense of responsibility and divinity upon me.</div>
+      </div>
+      <div class="div">
+        <div class="sticky txt" style="padding-right:10%;">These objects will circulate in this world forever, <br>continuing the cycle of disintegration and recombination. </div>
+      </div>
+      <div class="div">
+        <div class="sticky txt" style="margin-top:450px">It is uncertain if I, the speaking presence in my physical body, <br>will remain in this world when my heart no longer functions.</div>
+      </div>
+      <div class="div" style="width:120vw">
+        <div class="sticky txt" style="left:25%;padding-right:10%;">I merely provide a temporary residence <br>which these objects go through during their infinite cycle.</div>
+      </div>
+      <div class="div">
+        <div class="sticky txt" style="left:25%;padding-right:10%;">They have stirred known and unknown desires within me <br> to gravitate toward them, to pick them up and keep them until now.</div>
+      </div>
+      <div class="div">
+        <div class="sticky txt" style="left: 25%">In this perspective, objects have power over me.</div>
+      </div>
+      <div class="div outro">
+        <div class="sticky txt">If anyone would like to take part in the cycle of an object, <br>please let me know in person or online: <br>hello@jisooshin.me<br>If it's still with me, it's all yours at no cost,<br>since you took your time to ask.</div>
+      </div>
+    </div>
+  </body>
+
+  <script src=jquery.min.js></script>
+  <script src=functions.js></script>
+  <script type="text/javascript">
+
+	</script>
+</html>
