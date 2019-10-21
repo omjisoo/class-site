@@ -142,4 +142,7 @@ a.circle:hover{
   .side-nav a{
     font-size: 5vw;
   }
+  .flex{
+    flex-direction: column;
+  }
 }

@@ -2,7 +2,7 @@
   position: absolute;
   top: 40px;
   left:40%;
-  /* width: 100%; */
+  width: 75%;
   /* height: 100%; */
   display: flex;
   justify-content: flex-start;
@@ -66,4 +66,10 @@
   background: yellow;
   color: deepskyblue;
   padding: 0 3px;
+}
+
+@media screen and (max-width: 1024px){
+  .response-flex{
+    flex-direction: column;
+  }
 }
