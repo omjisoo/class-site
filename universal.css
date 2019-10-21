@@ -44,3 +44,15 @@ img{
   animation-play-state: paused;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 600px) {
+  .main-nav{
+    transform: scale(0.5);
+  }
+  .name{
+    font-size: 1.5rem;
+  }
+  .side-nav{
+    
+  }
+}

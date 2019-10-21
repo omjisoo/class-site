@@ -1,3 +1,35 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: pink;
+}
+
+a{
+  text-decoration: none;
+  color: pink;
+}
+
+img{
+  max-width: 700px;
+}
+
+.flex{
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  background: forestgreen;
+}
+
 /* main-nav */
 .main-nav{
   position: fixed;
@@ -7,7 +39,6 @@
   align-items: center;
   font-size: 180px;
   font-weight: 400;
-  transition: margin 1s ease;
 }
 
 #j:hover{
@@ -38,7 +69,7 @@ a.circle:hover{
   display: none;
   position: absolute;
   top: -40px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
 }
@@ -50,6 +81,21 @@ a.circle:hover{
 .main-selected{
   display: block;
   transform: translateY(80px);
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-20px);}
+}
+
+.bounce {
+  animation: bounce 1s alternate infinite ease;
+  animation-play-state: running;
+}
+
+.bounce:hover{
+  animation-play-state: paused;
+  border-radius: 50%;
 }
 
 /* side-nav */
@@ -84,4 +130,16 @@ a.circle:hover{
   background: yellow;
   color: deepskyblue;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav{
+    transform: scale(0.5);
+  }
+  .name{
+    font-size: 1.5rem;
+  }
+  .side-nav a{
+    font-size: 5vw;
+  }
 }
