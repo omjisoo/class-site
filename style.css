@@ -3,6 +3,8 @@ body{
   font-weight: 600;
   letter-spacing: 1px;
   color: pink;
+  width: 100vw;
+  height: 100vh;
 }
 
 a{
