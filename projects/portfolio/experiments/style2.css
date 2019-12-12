@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+.bigbox{
+  /* position: absolute; */
+  width: 100vw;
+  height: 100vh;
+  /* left: 0; */
+  /* top: 0; */
+  border: 1px solid red;
+  display: flex;
+}
+
+.section{
+  width: 50%;
+  height: 80%;
+  border: 1px solid blue;
+  perspective: 1000px;
+}
+
+.wall{
+  width: 50%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  right: 0;
+  transform: rotateY(-30deg);
+  transform-style: preserve-3d;
+  transform-origin: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
+  width: 50%;
+  height: 50%;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.text:hover{
+  background: red;
+}

@@ -1,0 +1,254 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+h1, h2, p{
+  text-decoration: none;
+  margin: 0;
+}
+
+h2{
+  margin-top: 2px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.world{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheat{
+  background: wheat;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.tomato{
+  background: tomato;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+.salmon {
+  background: salmon;
+  height: 70px;
+  width: 150px;
+  display: flex;
+  margin: 10px 0;
+}
+
+.head{
+  background: lightsalmon;
+  width: 30px;
+  height: 70px;
+}
+
+.tail{
+  background: darksalmon;
+  width: 30px;
+  height: 30px;
+}
+
+.plum{
+  background: plum;
+  height: 50px;
+  width: 50px;
+}
+
+.peachpuff{
+  background: peachpuff;
+  height: 50px;
+  width: 60px;
+  margin: -10px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.orange{
+  background: orange;
+  height: 30px;
+  width: 50px;
+  transform: rotate(45deg);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.olive{
+  background: olive;
+  width: 10px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.mohito{
+  background: mintcream;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.lime{
+  position: absolute;
+  left: 50%;
+  background: lime;
+  height: 20px;
+  width: 40px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.lemonchiffon{
+  width: 0px;
+      height: 0px;
+      border-right: 70px solid transparent;
+      border-top: 70px solid lemonchiffon;
+      border-left: 70px solid lemonchiffon;
+      border-bottom: 70px solid lemonchiffon;
+      border-top-left-radius: 70px;
+      border-top-right-radius: 70px;
+      border-bottom-left-radius: 70px;
+      border-bottom-right-radius: 70px;
+}
+
+.chocolate{
+  background: chocolate;
+  width: 100px;
+  height: 50px;
+}
+
+.almond{
+  /* display: block; */
+margin: 2px;
+width: 5px;
+height: 10px;
+background: blanchedalmond;
+border-radius: 25% 50% 50% 50% / 60% 60% 40% 40%;
+transform: rotate(45deg);
+}
+
+.bisque{
+  background: bisque;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.table{
+  width: 100vw;
+  height: 100vh;
+  background: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plate{
+  background: white;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small{
+  width: 80px;
+  height: 80px;
+}
+
+.medium{
+  width: 120px;
+  height: 120px;
+}
+
+.large{
+  width: 200px;
+  height: 200px;
+}
+
+.spoon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoop{
+  background: silver;
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.handle{
+  background: silver;
+  width: 5px;
+  height: 60px;
+  margin-top: -3px;
+}
+
+.row{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding: 10px;
+  transform: scale(1.25);
+}
+
+.dish{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dish > p{
+  display: none;
+  transition: all 0.5s ease,
+}
+
+.dish > h2{
+  display: none;
+  transition: all 0.5s ease,
+}
+
+.dish:hover{
+  transform: scale(1.1)
+}
+
+.dish:hover p{
+  display: block;
+  color: pink;
+}
+
+.dish:hover h2{
+  display: block;
+  color: pink;
+}
+
+.title{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  padding: 20px;
+  font-family: monospace;
+  color: beige
+}

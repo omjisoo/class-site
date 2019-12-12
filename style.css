@@ -1,10 +1,11 @@
 body{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
+  background: forestgreen;
   color: pink;
   width: 100vw;
   height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 a{
@@ -19,132 +20,19 @@ img{
 .flex{
   position: fixed;
   overflow: auto;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-start; */
 }
 
-.main{
-  background: forestgreen;
-}
 
-/* main-nav */
-.main-nav{
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 180px;
-  font-weight: 400;
-}
-
-#j:hover{
-  color: yellow;
-}
-
-.circle-flex{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.circle{
-  width: 80px;
-  height: 80px;
-  border: 10px solid pink;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-
-a.circle:hover{
-  background: yellow;
-}
-
-.name{
-  display: none;
-  position: absolute;
-  top: -40px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.circle-flex:hover .name{
-  display: block;
-}
-
-.main-selected{
-  display: block;
-  transform: translateY(80px);
-}
-
-@keyframes bounce {
-  0% {transform: translateY(0);}
-  100% {transform: translateY(-20px);}
-}
-
-.bounce {
-  animation: bounce 1s alternate infinite ease;
-  animation-play-state: running;
-}
-
-.bounce:hover{
-  animation-play-state: paused;
-  border-radius: 50%;
-}
-
-/* side-nav */
-.side-nav{
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-}
-
-.side-nav a{
-  font-size: 26px;
-  margin-right: 50px;
-  margin-bottom: 5px;
-  padding: 1px 10px;
-  transition: color 0.5s ease;
-}
-
-.side-nav a:hover{
-  background: yellow;
-  color: dodgerblue;
-  border-radius: 20px;
-}
-
-.sub{
-  position: relative;
-}
-
-.side-selected{
-  background: yellow;
-  color: deepskyblue;
-  border-radius: 20px;
-}
-
-@media screen and (max-width: 600px) {
-  .main-nav{
-    transform: scale(0.5);
-  }
-  .name{
-    font-size: 1.5rem;
-  }
-  .side-nav a{
-    font-size: 5vw;
-  }
+@media screen and (max-width: 1024px) {
   .flex{
-    flex-direction: column;
+    justify-content: space-between;
   }
 }

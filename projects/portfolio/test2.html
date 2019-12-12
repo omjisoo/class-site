@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=“en” dir=“ltr”>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="test2.css">
+  </head>
+
+  <body>
+    <div class="universe">
+      <!-- <div class="intro">
+        <h1>This is Jisoo. Jisoo makes&nbsp;</h1>
+        <div class="select">
+          <div>
+            <h1>???</h1>
+            <h1>+</h1>
+          </div>
+          <h1><a href="featured.html">design</a></h1>
+          <h1>illustration</h1>
+          <h1>and more</h1>
+        </div>
+      </div> -->
+      <div class="contact">
+        <h2><a href="mailto:jisoodesigns@gmail.com">jisoodesigns@gmail.com</a></h2>
+        <h2><a href="https://instagram.com/omjisoo">omjisoo</a> on insta</h2>
+      </div>
+      <div class="jisoo-wrap">
+        <!-- <div class="cap-wrap">
+          <img class="svg" src="img/jisoo-cap2.svg">
+        </div> -->
+        <div class="eyes2">
+            <div class="eye2">
+              <div class="eyeball2"></div>
+            </div>
+            <div class="eye2">
+              <div class="eyeball2"></div>
+            </div>
+          </div>
+        <div class="svg-wrap">
+          <img class="svg" src="img/jisoo-body2.svg" style="z-index: 3;">
+          <img class="svg" src="img/jisoo-shadow2.svg" style="z-index: 1;">
+        </div>
+        <div class="txt-wrap">
+          <p>Jisoo Shin is a designer and illustrator, among many other things. She is currently finishing up her graphic design studies at VCUarts.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+  <script src="functions.js"></script>
+  <script>
+  var eyeball2 = document.getElementsByClassName("eyeball2");
+  document.onmousemove = function(){
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+
+    for(var i=0;i<2;i++){
+      eyeball2[i].style.left = y;
+      eyeball2[i].style.top = -x;
+      eyeball2[i].style.transform = "translate(-"+y+",-"+x+")";
+    }
+  };
+</script>
+</html>

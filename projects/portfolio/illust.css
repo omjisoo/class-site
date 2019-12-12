@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, a{
+  text-decoration: none;
+  margin: 0;
+  font-weight: normal;
+}
+
+a{
+  font-size: 1.5rem;
+  z-index: 99;
+}
+
+.universe{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  /* background: forestgreen; */
+  /* overflow: hidden; */
+}
+
+.screen{
+  width: 100%;
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 5px solid white; */
+  background: rgb(255, 225, 225);
+  overflow-y: scroll;
+}
+
+.divider{
+  /* height: 100%; */
+  /* border: 0.5px dotted blue; */
+  padding: 20px;
+  display: flex;
+}
+
+.menu{
+  width: 700px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.5em;
+  z-index: 999;
+}
+
+.menu > div{
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  background: white;
+  /* transition: all 0.5s ease; */
+}
+
+.active{
+  /* border: 2px solid black; */
+  color: rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inactive{
+  transform: translate(5px, 5px);
+  /* background: rgba(255, 255, 255, 0); */
+  /* border: 1px dotted rgba(0, 0, 0, 0.5); */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.inactive:hover{
+  transform: translate(0, 0);
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+  /* border: 2px solid black; */
+  color: blue;
+}
+
+.heading{
+  border: 2px solid black;
+  border-radius: 1px;
+  display: flex;
+  align-self: flex-start;
+  padding: 5px 10px;
+  background: white;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#heading{
+  position: fixed;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+#content{
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.img-wrap{
+  width: 25%;
+  height: auto;
+  margin: 40px;
+  margin-top: 0;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 1px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  display: flex;
+  align-self: center;
+}
+
+.img-wrap > img{
+  width: 100%;
+}
+
+.img-wrap:hover{
+  transform-style: preserve-3d;
+  transform: translate(-7px, -7px);
+  box-shadow: 7px 7px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 800px){
+  .divider{
+    flex-flow: column wrap;
+  }
+  .menu-wrap{
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  .img-wrap{
+    width: auto;
+  }
+}

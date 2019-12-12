@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 500px;
+}
+
+.screen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  perspective: 1000px;
+}
+
+.menu-wrap{
+  position: fixed;
+  width: 75%;
+  height: 200%;
+  border: 1px solid black;
+  transform: rotate3d(0, 0, 1, 45deg);
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu{
+  width: 300px;
+  height: 200px;
+  background: white;
+  border: 1px solid black;
+}

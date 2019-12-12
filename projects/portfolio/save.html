@@ -1,0 +1,182 @@
+<button class="menubtn" onclick="openMenu()">⟡</button>
+
+<div class="menubox" id="menu">
+  <div style="display: flex;align-items:center">
+    <span style="opacity:0;">JISOO</span>&nbsp;&thinsp;makes&nbsp;<br>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">experiences</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="marryme.html">a space dedicated to self-love</a>
+        <a href="#">a mobile app to pick up Korean</a>
+        <a href="#">an adoption kiosk for tote bags</a>
+        <a href="#">a labyrinth for meditation</a>
+        <a href="#">a multicultural festival</a>
+      </div>
+    </div>
+    <div>,&nbsp;</div>
+    <button class="dropbtn"><a href="illust.html">illustrations</a></button>
+    <div>,&nbsp;and&nbsp;</div>
+    <button class="dropbtn"><a href=#>many more</a></button>
+    <div>.</div>
+  </div>
+  <div style="margin-top: 20px;position:absolute;bottom:20px">
+    jisoodesigns@gmail.com<br>
+    insta @omjisoo
+    <br></div>
+</div>
+
+.menubtn{
+  position: fixed;
+  right: 20px;
+  top:10px;
+  font-size: 3rem;
+  background: transparent;
+  border: none;
+  z-index: 999;
+  text-shadow: 0 0 20px whitesmoke;
+}
+
+.menubtn:hover{
+  color: magenta;
+  text-shadow: 0 0 20px cyan;
+  cursor:pointer;
+}
+
+.menubox{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.75);
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+}
+
+~ ~ ~
+
+.thumb{
+  width: 200px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+~ ~ ~
+
+<div class="content">
+  <div style="width:100vw;height:25vh;"></div>
+  <div class="section">
+    <div class="img-wrap">
+      <div class="cover">
+      <p>a space dedicated to self-love</p>
+      </div>
+      <div class="thumb">
+      <img src="img/marryme6.jpg">
+      <p>project marry me</p>
+      </div>
+    </div>
+    <div class="img-wrap">
+      <div class="cover">
+      <p>a mobile app to pick up Korean</p>
+      </div>
+      <div class="thumb">
+      <img src="img/joob3.jpg">
+      <p>Joob Joob</p>
+      </div>
+    </div>
+    <div class="img-wrap">
+      <div class="cover">
+      <p>a labyrinth for healing</p>
+      </div>
+      <div class="thumb">
+      <img src="img/rbha-closeup2.jpg">
+      <p>RBHA Meditation Labyrinth</p>
+      </div>
+    </div>
+  </div>
+
+  .img-wrap{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 2px dotted blue;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: 0.5s ease;
+    /* box-shadow: 0px 0px 5px rgba(0,0,0,0.2); */
+  }
+
+  .img-wrap p{
+    font-size: 1.3rem;
+    padding: 40px;
+  }
+
+  .thumb{
+    position: relative;
+  }
+
+  .thumb img{
+    width: 700px;
+  }
+
+  .thumb p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: blue;
+    padding: 3px;
+  }
+
+  .cover p{
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+
+  .cover{
+    position: absolute;
+    width: 1500px;
+    height: 1500px;
+    font-size: 1.2rem;
+    background: whitesmoke;
+    border-radius: 50%;
+    transition: 1.5s ease;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-wrap:hover{
+    transform: translate(-7px, -7px);
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.5);
+    /* border: 2px solid blue; */
+    border: 0px;
+  }
+
+  .img-wrap:hover .cover{
+    transform-origin: bottom right;
+    transform: translate(50%,50%);
+    border-radius: 50%;
+  }
